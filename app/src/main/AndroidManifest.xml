@@ -20,7 +20,7 @@
             android:name=".screens.job.JobDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".screens.job.JobActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.Yalla.NoActionBar" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".screens.job.JobActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Yalla.NoActionBar" />
