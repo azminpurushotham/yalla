@@ -13,10 +13,10 @@ import com.cherry.yalla.model.JobModel
 import java.text.SimpleDateFormat
 import java.util.*
 
-class JobAdapter (
+class JobItemAdapter (
     private val mContext: Context, private val mApps: ArrayList<JobModel>,
     var listener: OnItemClicked
-) : RecyclerView.Adapter<JobAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<JobItemAdapter.ViewHolder>() {
 
     lateinit var onItemClicked: OnItemClicked
 
@@ -28,23 +28,12 @@ class JobAdapter (
         onItemClicked = listener
         return ViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_layout_job_order, parent, false)
+                .inflate(R.layout.item_layout_job_items, parent, false)
         )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.tvShipping.setOnClickListener {
-            if(holder.tvAddress.visibility==View.VISIBLE){
-                holder.tvAddress.visibility=View.GONE
-            }else{
-                holder.tvAddress.visibility=View.VISIBLE
-            }
-        }
-
-        holder.itemView.setOnClickListener {
-            onItemClicked.onRecyclerItemClicked(JobModel())
-        }
     }
 
     override fun getItemCount(): Int {
@@ -53,12 +42,12 @@ class JobAdapter (
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var tvShipping: TextView
-        var tvAddress: TextView
+//        var tvShipping: TextView
+//        var tvAddress: TextView
 
         init {
-            tvShipping = itemView.findViewById<View>(R.id.tvShipping) as TextView
-            tvAddress = itemView.findViewById<View>(R.id.tvAddress) as TextView
+//            tvShipping = itemView.findViewById<View>(R.id.tvShipping) as TextView
+//            tvAddress = itemView.findViewById<View>(R.id.tvAddress) as TextView
         }
     }
 }

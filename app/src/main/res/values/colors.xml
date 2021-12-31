@@ -4,6 +4,7 @@
     <color name="primarydark">#FF4A36AF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
 
     <color name="purple_200">#FF6200EE</color>
     <color name="purple_500">#FF6200EE</color>
@@ -15,5 +16,6 @@
 
     <color name="toolbar_title">#6E59DA</color>
     <color name="text_secondary">#3E3E3E</color>
-    <color name="divider">#00000029</color>
+    <color name="divider">#1E000029</color>
+    <color name="disabled">#BCBCBC</color>
 </resources>

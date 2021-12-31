@@ -2,17 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginBottom="10dp">
+    android:layout_marginBottom="15dp"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/vertical_dot_lines"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layerType="software"
+            android:src="@drawable/vertical_dot_lines" />
     </LinearLayout>
 
     <LinearLayout
@@ -20,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="9"
         android:background="@drawable/shape_one_side_rounded_rect"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,15 +35,15 @@
             <TextView
                 android:id="@+id/tvNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="32dp"
                 android:background="@drawable/shape_rounded_rect_gray_left"
                 android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="01"
-                android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_13ssp" />
+                android:textSize="@dimen/_11ssp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -49,16 +54,16 @@
                 <TextView
                     android:id="@+id/tvPayMode"
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
+                    android:layout_height="32dp"
                     android:layout_gravity="right"
                     android:background="@drawable/shape_rounded_rect_gray_right"
                     android:fontFamily="@font/rubik"
+                    android:gravity="center"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:gravity="center"
                     android:text="Cash on delivery"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_11ssp" />
+                    android:textSize="@dimen/_9ssp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -72,42 +77,45 @@
                 android:id="@+id/tvOrderId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/rubik_medium"
                 android:paddingTop="10dp"
                 android:paddingRight="15dp"
                 android:text="Order #13452455"
                 android:textColor="@color/black"
-                android:layout_weight="1"
-                android:textSize="@dimen/_13ssp" />
+                android:textSize="@dimen/_12ssp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:background="@drawable/shape_oneside_rounded_rect_gray_right"
                 android:fontFamily="@font/rubik"
-                android:paddingLeft="15dp"
-                android:paddingTop="6dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="6dp"
-                android:text="Cash on delivery"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="4dp"
+                android:text="Muaither"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_7ssp" />
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik"
-            android:text="Items: 8"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/rubik"
+            android:paddingLeft="15dp"
+            android:text="Items: 8"
             android:textColor="@color/text_secondary"
-            android:textSize="@dimen/_9ssp"
-            android:paddingLeft="15dp"/>
+            android:textSize="@dimen/_9ssp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            android:paddingLeft="15dp"
-            android:layout_marginTop="4dp">
+            android:paddingLeft="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -126,30 +134,37 @@
                 android:textColor="@color/primary"
                 android:textSize="@dimen/_10ssp" />
         </LinearLayout>
-        <View android:layout_width="match_parent"
+
+        <View
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/divider"/>
+            android:background="@color/divider" />
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tvShipping"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_arrow_down"
             android:fontFamily="@font/rubik_medium"
-            android:paddingRight="15dp"
             android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:text="Shipping Address"
             android:textColor="@color/black"
-            android:layout_weight="1"
-            android:textSize="@dimen/_13ssp" />
+            android:textSize="@dimen/_12ssp" />
+
         <TextView
+            android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik"
-            android:text="Building No 268, Street 280,Zone 55,\n1st Floor(Above Royal Toys),Al Furousia Street\nMuaither,\nDoha, Qatar 63402"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/rubik"
+            android:paddingLeft="15dp"
+            android:text="Building No 268, Street 280,Zone 55,\n1st Floor(Above Royal Toys),Al Furousia Street\nMuaither,\nDoha, Qatar 63402"
             android:textColor="@color/text_secondary"
             android:textSize="@dimen/_9ssp"
-            android:layout_marginBottom="15dp"
-            android:paddingLeft="15dp"/>
+            android:visibility="gone" />
     </LinearLayout>
 </LinearLayout>

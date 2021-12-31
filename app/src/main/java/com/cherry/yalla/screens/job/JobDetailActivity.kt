@@ -1,23 +1,22 @@
 package com.cherry.yalla.screens.job
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.application.base.BaseActivity
-import com.cherry.yalla.R
 import com.cherry.yalla.databinding.ActivityJobBinding
+import com.cherry.yalla.databinding.ActivityJobDetailBinding
 import com.cherry.yalla.model.JobModel
 import com.cherry.yalla.screens.job.adapter.JobAdapter
+import com.cherry.yalla.screens.job.adapter.JobItemAdapter
 
-class JobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
-
-    private lateinit var binding: ActivityJobBinding
+class JobDetailActivity : BaseActivity(), BaseActivity.OnRetryButtonClick  {
+    private lateinit var binding: ActivityJobDetailBinding
     var jobList = arrayListOf<JobModel>()
-    lateinit var jobAdapter: JobAdapter
+    lateinit var jobItemAdapter: JobItemAdapter
 
     override fun getContentView(): View {
-        binding = ActivityJobBinding.inflate(layoutInflater)
+        binding = ActivityJobDetailBinding.inflate(layoutInflater)
         val view = binding.root
         return view
     }
@@ -32,14 +31,14 @@ class JobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
     }
 
     private fun setupRecyclerView() {
-        binding.recyclerJob.setHasFixedSize((false))
-        jobAdapter= JobAdapter(this,jobList, object : JobAdapter.OnItemClicked {
+        binding.recyclerItems.setHasFixedSize((false))
+        jobItemAdapter= JobItemAdapter(this,jobList, object : JobItemAdapter.OnItemClicked {
             override fun onRecyclerItemClicked(data: JobModel) {
-                startActivity(Intent(this@JobActivity,JobDetailActivity::class.java))
+
             }
 
         })
-        binding.recyclerJob.adapter=jobAdapter
+        binding.recyclerItems.adapter=jobItemAdapter
     }
 
     override fun onRetryClick() {
