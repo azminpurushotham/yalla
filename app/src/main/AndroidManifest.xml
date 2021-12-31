@@ -43,6 +43,11 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Yalla.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Yalla.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
