@@ -4,6 +4,7 @@
     <color name="primarydark">#FF4A36AF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
     <color name="background">#FFF3F5F7</color>
 
     <color name="purple_200">#FF6200EE</color>
@@ -11,4 +12,15 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <color name="page_bg">#F3F5F7</color>
+
+    <color name="toolbar_title">#6E59DA</color>
+    <color name="text_secondary">#3E3E3E</color>
+    <color name="divider">#1E000029</color>
+    <color name="disabled">#BCBCBC</color>
+
+    <color name="green">#0EA74F</color>
+    <color name="red">#F15249</color>
+    <color name="yellow">#FFBD27</color>
 </resources>
