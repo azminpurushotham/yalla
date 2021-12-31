@@ -5,19 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.application.base.BaseActivity
+import com.cherry.yalla.R
+import com.cherry.yalla.databinding.ActivityAcceptedJobBinding
 import com.cherry.yalla.databinding.ActivityJobBinding
-import com.cherry.yalla.databinding.ActivityJobDetailBinding
 import com.cherry.yalla.model.JobModel
+import com.cherry.yalla.screens.job.adapter.AcceptedJobAdapter
 import com.cherry.yalla.screens.job.adapter.JobAdapter
-import com.cherry.yalla.screens.job.adapter.JobItemAdapter
 
-class JobDetailActivity : BaseActivity(), BaseActivity.OnRetryButtonClick  {
-    private lateinit var binding: ActivityJobDetailBinding
+class AcceptedJobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
+
+    private lateinit var binding: ActivityAcceptedJobBinding
     var jobList = arrayListOf<JobModel>()
-    lateinit var jobItemAdapter: JobItemAdapter
+    lateinit var jobAdapter: AcceptedJobAdapter
 
     override fun getContentView(): View {
-        binding = ActivityJobDetailBinding.inflate(layoutInflater)
+        binding = ActivityAcceptedJobBinding.inflate(layoutInflater)
         val view = binding.root
         return view
     }
@@ -29,20 +31,17 @@ class JobDetailActivity : BaseActivity(), BaseActivity.OnRetryButtonClick  {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecyclerView()
-        binding.tvPayMode.setOnClickListener {
-            startActivity(Intent(this@JobDetailActivity,AcceptedJobActivity::class.java))
-        }
     }
 
     private fun setupRecyclerView() {
-        binding.recyclerItems.setHasFixedSize((false))
-        jobItemAdapter= JobItemAdapter(this,jobList, object : JobItemAdapter.OnItemClicked {
+        binding.recyclerJob.setHasFixedSize((false))
+        jobAdapter= AcceptedJobAdapter(this,jobList, object : AcceptedJobAdapter.OnItemClicked {
             override fun onRecyclerItemClicked(data: JobModel) {
-
+                startActivity(Intent(this@AcceptedJobActivity,JobDetailActivity::class.java))
             }
 
         })
-        binding.recyclerItems.adapter=jobItemAdapter
+        binding.recyclerJob.adapter=jobAdapter
     }
 
     override fun onRetryClick() {

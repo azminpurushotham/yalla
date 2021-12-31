@@ -18,4 +18,8 @@
     <color name="text_secondary">#3E3E3E</color>
     <color name="divider">#1E000029</color>
     <color name="disabled">#BCBCBC</color>
+
+    <color name="green">#0EA74F</color>
+    <color name="red">#F15249</color>
+    <color name="yellow">#FFBD27</color>
 </resources>
