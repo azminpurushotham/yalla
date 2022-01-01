@@ -10,32 +10,46 @@
         <entry key="app/src/main/res/drawable/ic_back_primary.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_right.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/ic_right_primary.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/negative.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/selecter_home_gride.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/selecter_month.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_ash_gray.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_bottom_left.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_bottom_right.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_bottom_right_left.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_bottom_strock_edittext.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/shape_camera.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_editext.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_green_home.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_login.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_one_side_rounded_rect.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_oneside_rounded_rect_gray_right.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_orange_home.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/shape_primary_button.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_primary_button_small.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_primary_circle.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_rounded_rect.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_rounded_rect_gray_left.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_rounded_rect_gray_right.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_skyblue_home.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/shape_transparent.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/shape_white_home.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/shape_white_strock_button_small.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/splash.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/switch_thumb_false.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/switch_thumb_true.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/thumb.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/track.xml" value="0.371875" />
         <entry key="app/src/main/res/font/rubik.xml" value="0.37592592592592594" />
+        <entry key="app/src/main/res/layout/dialogue_note.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/dialogue_qid.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_changepassword.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_itemstoreturn.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_joblist.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/item_date.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/item_item_return.xml" value="0.34074074074074073" />
         <entry key="app/src/main/res/layout/item_jobs.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/item_month.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/logon_activity.xml" value="0.25" />

@@ -9,4 +9,6 @@
     <string name="no_network">No network</string>
     <string name="profile">profile</string>
     <string name="joblist">Job List</string>
+    <string name="changepassword">changepassword</string>
+    <string name="returnitem">return</string>
 </resources>

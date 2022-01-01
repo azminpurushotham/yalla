@@ -24,4 +24,16 @@
         android:label="@string/joblist"
         tools:layout="@layout/fragment_joblist" />
 
+    <fragment
+        android:id="@+id/chengePasswordFragment"
+        android:name="com.cherry.yalla.EditPasswordFragment"
+        android:label="@string/changepassword"
+        tools:layout="@layout/fragment_changepassword" />
+
+    <fragment
+        android:id="@+id/itemsToReturnFragment"
+        android:name="com.cherry.yalla.ItemsToReturnFragment"
+        android:label="@string/returnitem"
+        tools:layout="@layout/fragment_itemstoreturn" />
+
 </navigation>
