@@ -25,5 +25,8 @@ class MainActivity : FragmentActivity() {
         layProfile.setOnClickListener {
             findNavController(this,R.id.container).navigate(R.id.profileFragment)
         }
+        layProfile.setOnClickListener {
+            findNavController(this,R.id.container).navigate(R.id.profileFragment)
+        }
     }
 }

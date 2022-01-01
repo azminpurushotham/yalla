@@ -84,6 +84,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvMonths"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

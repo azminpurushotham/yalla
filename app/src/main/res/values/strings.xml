@@ -8,4 +8,5 @@
     <string name="please_wait">Please wait...</string>
     <string name="no_network">No network</string>
     <string name="profile">profile</string>
+    <string name="joblist">Job List</string>
 </resources>
