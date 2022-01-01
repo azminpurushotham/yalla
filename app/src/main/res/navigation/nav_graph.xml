@@ -17,6 +17,7 @@
         android:name="com.cherry.yalla.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
+
     <fragment
         android:id="@+id/jobListFragment"
         android:name="com.cherry.yalla.JobListFragment"
