@@ -23,4 +23,8 @@
     <color name="green">#0EA74F</color>
     <color name="red">#F15249</color>
     <color name="yellow">#FFBD27</color>
+    <color name="cancelled">#F15249</color>
+    <color name="edited">#FFBD27</color>
+    <color name="grey">#5B6F99</color>
+    <color name="light_green">#59DA90</color>
 </resources>

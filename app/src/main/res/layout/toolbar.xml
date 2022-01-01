@@ -12,13 +12,14 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
+        android:id="@+id/imgBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:padding="10dp"
         android:adjustViewBounds="true"
-        android:id="@+id/imgBack"
-        android:src="@drawable/ic_back_left_arrow_toolbar"/>
+        android:padding="10dp"
+        android:src="@drawable/back_bt" />
 
     <TextView
         android:id="@+id/tvHeading"
@@ -30,5 +31,34 @@
         android:text="Job #0099"
         android:textColor="@color/toolbar_title"
         android:textSize="@dimen/_13ssp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Online"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8ssp"
+        android:layout_toLeftOf="@+id/switchOnline" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:thumb="@drawable/thumb"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imgDelivery"
+        app:track="@drawable/track" />
+
+    <ImageView
+        android:id="@+id/imgDelivery"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_primary_button"
+        android:padding="8dp"
+        android:src="@drawable/delivery_van" />
 </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>

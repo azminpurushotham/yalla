@@ -32,6 +32,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="23dp"
                 android:paddingTop="19dp"
+                android:id="@+id/topContainer"
                 android:paddingRight="23dp"
                 android:paddingBottom="19dp">
 

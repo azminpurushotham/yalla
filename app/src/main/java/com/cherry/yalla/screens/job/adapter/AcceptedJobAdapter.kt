@@ -1,9 +1,11 @@
 package com.cherry.yalla.screens.job.adapter
 
 import android.content.Context
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -22,7 +24,7 @@ class AcceptedJobAdapter (
     lateinit var onItemClicked: OnItemClicked
 
     interface OnItemClicked {
-        fun onRecyclerItemClicked(data: JobModel)
+        fun onRecyclerItemClicked(data: JobModel,pos:Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -44,6 +46,11 @@ class AcceptedJobAdapter (
                 DrawableCompat.wrap(holder.tvPayMode.background),
                 ContextCompat.getColor(mContext, R.color.green)
             )
+            DrawableCompat.setTint(
+                DrawableCompat.wrap(holder.imgDot.drawable),
+                ContextCompat.getColor(mContext, R.color.green)
+            )
+            holder.imgStatus.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.completed_green))
             holder.container.background= ContextCompat.getDrawable(mContext, R.drawable.shape_rounded_rect_green)
         }else if(position==1){
             DrawableCompat.setTint(
@@ -54,6 +61,11 @@ class AcceptedJobAdapter (
                 DrawableCompat.wrap(holder.tvPayMode.background),
                 ContextCompat.getColor(mContext, R.color.red)
             )
+            DrawableCompat.setTint(
+                DrawableCompat.wrap(holder.imgDot.drawable),
+                ContextCompat.getColor(mContext, R.color.red)
+            )
+            holder.imgStatus.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.completed_red))
             holder.container.background= ContextCompat.getDrawable(mContext, R.drawable.shape_rounded_rect_red)
         }else if(position==2){
             DrawableCompat.setTint(
@@ -64,6 +76,11 @@ class AcceptedJobAdapter (
                 DrawableCompat.wrap(holder.tvPayMode.background),
                 ContextCompat.getColor(mContext, R.color.yellow)
             )
+            DrawableCompat.setTint(
+                DrawableCompat.wrap(holder.imgDot.drawable),
+                ContextCompat.getColor(mContext, R.color.yellow)
+            )
+            holder.imgStatus.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.completed_yellow))
             holder.container.background= ContextCompat.getDrawable(mContext, R.drawable.shape_rounded_rect_yellow)
         }
 
@@ -76,7 +93,7 @@ class AcceptedJobAdapter (
         }
 
         holder.itemView.setOnClickListener {
-            onItemClicked.onRecyclerItemClicked(JobModel())
+            onItemClicked.onRecyclerItemClicked(JobModel(),position)
         }
     }
 
@@ -91,6 +108,8 @@ class AcceptedJobAdapter (
         var tvNumber: TextView
         var tvPayMode: TextView
         var container: LinearLayout
+        var imgDot:ImageView
+        var imgStatus:ImageView
 
         init {
             tvShipping = itemView.findViewById<View>(R.id.tvShipping) as TextView
@@ -98,6 +117,8 @@ class AcceptedJobAdapter (
             tvNumber = itemView.findViewById<View>(R.id.tvNumber) as TextView
             tvPayMode = itemView.findViewById<View>(R.id.tvPayMode) as TextView
             container = itemView.findViewById(R.id.container) as LinearLayout
+            imgDot = itemView.findViewById(R.id.imgDots) as ImageView
+            imgStatus = itemView.findViewById(R.id.imgStatus) as ImageView
         }
     }
 }

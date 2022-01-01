@@ -11,11 +11,17 @@
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgStatus"
+            android:src="@drawable/completed_gray" />
         <ImageView
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layerType="software"
+            android:id="@+id/imgDots"
             android:src="@drawable/vertical_dot_lines" />
     </LinearLayout>
 
