@@ -22,7 +22,7 @@
             android:layout_height="30dp"
             android:padding="5dp"
             android:tintMode="multiply"
-            android:src="@drawable/ic_back"
+            android:src="@drawable/ic_back_primary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
