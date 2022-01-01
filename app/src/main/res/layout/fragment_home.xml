@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:text="July 20, 2021"
             android:textColor="@color/black"
-            android:textSize="10sp"
+            android:textSize="@dimen/_8ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +33,7 @@
             android:layout_marginEnd="10dp"
             android:text="Online"
             android:textColor="@color/black"
-            android:textSize="10sp"
+            android:textSize="@dimen/_8ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/switchOnline"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchOnline"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:layout_marginEnd="10dp"
             android:thumb="@drawable/thumb"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -120,6 +120,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="190dp"
                         android:layout_marginBottom="10dp"
+                        android:id="@+id/activityView"
                         android:background="@drawable/shape_green_home"
                         android:padding="10dp">
 
@@ -229,6 +230,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
                         android:layout_marginBottom="10dp"
+                        android:id="@+id/jobView"
                         android:background="@drawable/shape_white_home"
                         android:padding="10dp">
 

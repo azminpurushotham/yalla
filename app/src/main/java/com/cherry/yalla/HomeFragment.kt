@@ -1,10 +1,15 @@
 package com.cherry.yalla
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.cherry.yalla.screens.job.JobActivity
+import com.cherry.yalla.screens.job.JobDetailActivity
+import com.cherry.yalla.screens.order.ActivityLogActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +26,10 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    lateinit var fragmentContainer:View
+    lateinit var jobView:ConstraintLayout
+    lateinit var activityView:ConstraintLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -33,8 +42,16 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        fragmentContainer=inflater.inflate(R.layout.fragment_home, container, false)
+        jobView=fragmentContainer.findViewById(R.id.jobView)
+        jobView.setOnClickListener {
+            startActivity(Intent(requireContext(), JobActivity::class.java))
+        }
+        activityView=fragmentContainer.findViewById(R.id.activityView)
+        activityView.setOnClickListener {
+            startActivity(Intent(requireContext(), ActivityLogActivity::class.java))
+        }
+        return fragmentContainer
     }
 
     companion object {

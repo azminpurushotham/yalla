@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:elevation="3dp"
+    app:cardBackgroundColor="@color/primary"
+    app:cardCornerRadius="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/arraow_top"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Payment Methods"
+            android:textColor="#4A36AF"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik"
+            android:text="Cash on delivery"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_cash_payment"
+            android:textSize="@dimen/_10ssp"
+            android:drawablePadding="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvCard"
+            android:fontFamily="@font/rubik"
+            android:text="Card on delivery"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_credit_card__1_"
+            android:textSize="@dimen/_10ssp"
+            android:drawablePadding="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik"
+            android:text="Link payment"
+            android:id="@+id/tvLink"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/ic_list"
+            android:textSize="@dimen/_10ssp"
+            android:drawablePadding="20dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
