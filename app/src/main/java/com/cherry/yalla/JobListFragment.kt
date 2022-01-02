@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.math.log
 
@@ -23,18 +24,18 @@ class JobListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        months.add("Jan")
-        months.add("Feb")
-        months.add("Mar")
-        months.add("Apr")
+        months.add("January")
+        months.add("Febuary")
+        months.add("March")
+        months.add("April")
         months.add("May")
-        months.add("Jun")
-        months.add("Jul")
-        months.add("Aug")
-        months.add("Sep")
-        months.add("Oct")
-        months.add("Nov")
-        months.add("Dec")
+        months.add("June")
+        months.add("July")
+        months.add("August")
+        months.add("Septmber")
+        months.add("October")
+        months.add("November")
+        months.add("December")
 
         for (i in 1..30) {
             dates.add(i.toString())
@@ -60,9 +61,14 @@ class JobListFragment : Fragment() {
         datesAdapter = DatesAdapter(dates)
         rvDate.adapter = datesAdapter
 
-        jobsAdapter = JobsAdapter(months)
+        jobsAdapter = JobsAdapter(months,this::onClicked)
         rvJobs.adapter = jobsAdapter
 
         return view
+    }
+
+
+    private fun onClicked(){
+        findNavController().navigate(R.id.itemsToReturnFragment)
     }
 }

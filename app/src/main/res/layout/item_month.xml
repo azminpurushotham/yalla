@@ -9,13 +9,13 @@
         android:id="@+id/txtMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/selecter_month"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="6dp"
         android:text="January"
-        android:textColor="@color/selector_black_gray"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold" />
 
@@ -35,8 +35,10 @@
 
 
         <Button
+            android:id="@+id/btnDot"
             android:layout_width="10dp"
             android:layout_height="10dp"
+            android:visibility="invisible"
             android:background="@drawable/shape_rounded_rect"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
