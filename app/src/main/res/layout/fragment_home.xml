@@ -88,7 +88,7 @@
                 android:text="Alex thomas"
                 android:textColor="@color/black"
                 android:textSize="13sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/rubik_medium" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,21 +118,21 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="190dp"
+                        android:layout_height="230dp"
                         android:layout_marginBottom="10dp"
                         android:id="@+id/activityView"
                         android:background="@drawable/shape_green_home"
-                        android:padding="10dp">
+                        android:padding="20dp">
 
                         <TextView
                             android:id="@+id/txt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingEnd="40dp"
-                            android:text="July \n Earnings"
+                            android:text="July \nEarnings"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -169,9 +169,9 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="160dp"
+                        android:layout_height="200dp"
                         android:background="@drawable/shape_white_home"
-                        android:padding="10dp">
+                        android:padding="20dp">
 
                         <TextView
                             android:id="@+id/txt11"
@@ -181,7 +181,7 @@
                             android:text="Items to \nReturn"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -228,11 +228,11 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="160dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="10dp"
                         android:id="@+id/jobView"
                         android:background="@drawable/shape_white_home"
-                        android:padding="10dp">
+                        android:padding="20dp">
 
                         <TextView
                             android:id="@+id/txt111"
@@ -242,7 +242,7 @@
                             android:text="Jobs in \nJuly"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -279,9 +279,9 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="190dp"
+                        android:layout_height="230dp"
                         android:background="@drawable/selecter_home_gride"
-                        android:padding="10dp">
+                        android:padding="20dp">
 
                         <TextView
                             android:id="@+id/txt1111"
@@ -291,7 +291,7 @@
                             android:text="Cash \nCollected"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 

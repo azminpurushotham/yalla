@@ -11,6 +11,7 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_arrow_up.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_back_left_arrow_toolbar.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_calendar__1_.xml" value="0.234375" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_editext.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_green_button.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_green_home.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_login.xml" value="0.234375" />
@@ -41,13 +42,13 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/dialog_order_done.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/dialog_order_edited.xml" value="0.2" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/dialog_payment.xml" value="0.21822916666666667" />
-        <entry key="..\:/Personal/yalla/app/src/main/res/layout/fragment_home.xml" value="0.21822916666666667" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_jobs.xml" value="0.21822916666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_activity.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_job_items.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_job_items_status.xml" value="0.21822916666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_job_order.xml" value="0.264" />
-        <entry key="..\:/Personal/yalla/app/src/main/res/layout/logon_activity.xml" value="0.14447463768115942" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/layout/logon_activity.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/main_activity.xml" value="0.14447463768115942" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/progress_dialog.xml" value="0.21822916666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/retry_dialog.xml" value="0.21822916666666667" />

@@ -9,6 +9,8 @@ import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import com.application.base.BaseActivity
@@ -57,6 +59,10 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
                     showOrderDialog(pos)
                 }
 
+                override fun onQtyItemClicked(data: JobModel, pos: Int) {
+                    showNoteDialogue()
+                }
+
             })
         binding.recyclerItems.adapter = jobItemAdapter
     }
@@ -94,9 +100,9 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         progress.requestWindowFeature(Window.FEATURE_NO_TITLE)
         if(pos==0) {
             progress.setContentView(R.layout.dialog_order_done)
-        }else if(pos==1){
-            progress.setContentView(R.layout.dialog_order_cancel)
         }else if(pos==2){
+            progress.setContentView(R.layout.dialog_order_cancel)
+        }else if(pos==1){
             progress.setContentView(R.layout.dialog_order_edited)
         }
 
@@ -115,5 +121,22 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         progress.setCancelable(true)
         progress.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         progress.show()
+    }
+
+    private fun showNoteDialogue() {
+        val dialog = Dialog(this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.dialogue_note)
+        dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        val btnSubmit: Button = dialog.findViewById(R.id.btnSubmit)
+        val imgClose: ImageView = dialog.findViewById(R.id.imgClose)
+        btnSubmit.setOnClickListener {
+            dialog.dismiss()
+        }
+        imgClose.setOnClickListener {
+            dialog.dismiss()
+        }
+        dialog.show()
     }
 }

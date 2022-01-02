@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingTop="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,26 +44,25 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="Driver"
+            android:fontFamily="@font/rubik_medium"
             android:textColor="@color/primarydark"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textSize="22sp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik_medium"
             android:gravity="center"
             android:text="Welcome back"
             android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textSize="12sp"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/shape_login"
             android:orientation="vertical"
@@ -76,7 +76,9 @@
                 android:layout_height="43dp"
                 android:background="@drawable/shape_editext"
                 android:hint="Enter your email or phone number"
-                android:padding="8dp"
+                android:paddingLeft="13dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/rubik_medium"
                 android:textSize="13sp" />
 
             <EditText
@@ -85,8 +87,10 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_editext"
                 android:hint="Password"
+                android:fontFamily="@font/rubik_medium"
                 android:inputType="textPassword"
-                android:padding="8dp"
+                android:paddingLeft="13dp"
+                android:gravity="center_vertical"
                 android:textSize="13sp" />
 
             <Button
