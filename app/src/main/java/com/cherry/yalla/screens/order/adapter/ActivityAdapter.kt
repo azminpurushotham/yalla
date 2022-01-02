@@ -38,27 +38,36 @@ class ActivityAdapter(
         if (position == 0) {
             holder.calendarLayout.visibility = View.GONE
             holder.imageLayout.visibility = View.GONE
+            holder.time.visibility=View.INVISIBLE
         } else if (position == 1) {
             holder.calendarLayout.visibility = View.GONE
             holder.imageLayout.visibility = View.VISIBLE
+            holder.time.visibility=View.INVISIBLE
         } else if (position == 2) {
             holder.calendarLayout.visibility = View.VISIBLE
             holder.imageLayout.visibility = View.GONE
+            holder.time.visibility=View.VISIBLE
+        }else{
+            holder.calendarLayout.visibility = View.GONE
+            holder.imageLayout.visibility = View.GONE
+            holder.time.visibility=View.INVISIBLE
         }
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 6
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         var imageLayout: LinearLayout
         var calendarLayout: LinearLayout
+        var time:TextView
 
         init {
             imageLayout = itemView.findViewById<View>(R.id.imageLayout) as LinearLayout
             calendarLayout = itemView.findViewById<View>(R.id.calendarLayout) as LinearLayout
+            time = itemView.findViewById<View>(R.id.time) as TextView
         }
     }
 }

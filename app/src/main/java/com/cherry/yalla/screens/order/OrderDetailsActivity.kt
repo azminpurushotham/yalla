@@ -45,6 +45,10 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
             startActivity(Intent(this@OrderDetailsActivity,AcceptedJobActivity::class.java))
         }
 
+        binding.btnNotification.setOnClickListener {
+            startActivity(Intent(this@OrderDetailsActivity,ActivityLogActivity::class.java))
+        }
+
         binding.paymentMethods.setOnClickListener {
             showPaymentDialog()
         }

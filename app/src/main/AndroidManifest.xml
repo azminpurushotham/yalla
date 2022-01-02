@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yalla">
         <activity
+            android:name=".screens.order.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.order.MyJobActivity"
+            android:exported="false" />
+        <activity
             android:name=".screens.order.ActivityLogActivity"
             android:exported="false" />
         <activity

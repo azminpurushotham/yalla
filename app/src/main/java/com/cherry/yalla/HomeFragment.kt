@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
         fragmentContainer=inflater.inflate(R.layout.fragment_home, container, false)
         jobView=fragmentContainer.findViewById(R.id.jobView)
         jobView.setOnClickListener {
-            startActivity(Intent(requireContext(), JobActivity::class.java))
+
         }
         activityView=fragmentContainer.findViewById(R.id.activityView)
         activityView.setOnClickListener {

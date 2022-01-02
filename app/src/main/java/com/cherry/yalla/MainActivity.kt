@@ -14,12 +14,16 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
+import com.cherry.yalla.screens.order.ActivityLogActivity
+import com.cherry.yalla.screens.order.MyJobActivity
+import com.cherry.yalla.screens.order.NotificationActivity
 
 class MainActivity : FragmentActivity() {
 
     lateinit var laySettings: LinearLayout
     lateinit var layProfile: LinearLayout
     lateinit var layJobs: ConstraintLayout
+    lateinit var layNotification:LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +31,7 @@ class MainActivity : FragmentActivity() {
         laySettings = findViewById(R.id.laySettings)
         layProfile = findViewById(R.id.layProfile)
         layJobs = findViewById(R.id.layJobs)
+        layNotification=findViewById(R.id.layNotification)
 
         laySettings.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
@@ -41,8 +46,13 @@ class MainActivity : FragmentActivity() {
         }
 
         layJobs.setOnClickListener {
-            findNavController(this, R.id.container).navigate(R.id.jobListFragment)
+//            findNavController(this, R.id.container).navigate(R.id.jobListFragment)
 //            findNavController(this, R.id.container).navigate(R.id.itemsToReturnFragment)
+            startActivity(Intent(this@MainActivity, MyJobActivity::class.java))
+        }
+
+        layNotification.setOnClickListener {
+            startActivity(Intent(this@MainActivity, NotificationActivity::class.java))
         }
     }
 

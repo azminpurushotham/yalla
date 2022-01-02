@@ -68,6 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_weight="1"
+                android:id="@+id/layNotification"
                 android:background="@color/primary"
                 android:gravity="center"
                 android:orientation="vertical"
