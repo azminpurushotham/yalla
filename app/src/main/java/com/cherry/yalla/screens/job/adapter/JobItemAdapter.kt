@@ -34,6 +34,8 @@ class JobItemAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        holder.itemView.setOnClickListener { listener.onRecyclerItemClicked(JobModel()) }
+
     }
 
     override fun getItemCount(): Int {

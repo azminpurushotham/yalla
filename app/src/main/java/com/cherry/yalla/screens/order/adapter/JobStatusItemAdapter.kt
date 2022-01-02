@@ -24,7 +24,7 @@ class JobStatusItemAdapter(
     lateinit var onItemClicked: OnItemClicked
 
     interface OnItemClicked {
-        fun onRecyclerItemClicked(data: JobModel)
+        fun onRecyclerItemClicked(data: JobModel,pos:Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -71,6 +71,8 @@ class JobStatusItemAdapter(
                 ContextCompat.getColor(mContext, R.color.grey)
             )
         }
+
+        holder.itemView.setOnClickListener { listener.onRecyclerItemClicked(JobModel(),position) }
     }
 
     override fun getItemCount(): Int {

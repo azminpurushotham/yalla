@@ -38,6 +38,10 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecyclerView(false)
+        binding.header.tvHeading.text="Order #13452455"
+        binding.btnUpdate.setOnClickListener {
+            startActivity(Intent(this@OrderDetailsActivity,AcceptedJobActivity::class.java))
+        }
 
         binding.paymentMethods.setOnClickListener {
             showPaymentDialog()
@@ -49,8 +53,8 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         binding.recyclerItems.setHasFixedSize((false))
         jobItemAdapter =
             JobStatusItemAdapter(this,showNote, jobList, object : JobStatusItemAdapter.OnItemClicked {
-                override fun onRecyclerItemClicked(data: JobModel) {
-
+                override fun onRecyclerItemClicked(data: JobModel,pos:Int) {
+                    showOrderDialog(pos)
                 }
 
             })
@@ -80,6 +84,34 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT
 
         progress.window!!.attributes = lp
+        progress.setCancelable(true)
+        progress.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        progress.show()
+    }
+
+    private fun showOrderDialog(pos:Int) {
+        val progress = Dialog(this)
+        progress.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        if(pos==0) {
+            progress.setContentView(R.layout.dialog_order_done)
+        }else if(pos==1){
+            progress.setContentView(R.layout.dialog_order_cancel)
+        }else if(pos==2){
+            progress.setContentView(R.layout.dialog_order_edited)
+        }
+
+        val btOk = progress.findViewById<View>(R.id.btBack) as AppCompatButton
+
+        btOk.setOnClickListener(View.OnClickListener {
+            progress.dismiss()
+
+        })
+        val lp = WindowManager.LayoutParams()
+        lp.copyFrom(progress.window!!.attributes)
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT
+
+        progress.window!!.attributes=lp
         progress.setCancelable(true)
         progress.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         progress.show()

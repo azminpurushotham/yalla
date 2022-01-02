@@ -10,6 +10,7 @@ import com.cherry.yalla.databinding.ActivityJobDetailBinding
 import com.cherry.yalla.model.JobModel
 import com.cherry.yalla.screens.job.adapter.JobAdapter
 import com.cherry.yalla.screens.job.adapter.JobItemAdapter
+import com.cherry.yalla.screens.order.OrderDetailsActivity
 
 class JobDetailActivity : BaseActivity(), BaseActivity.OnRetryButtonClick  {
     private lateinit var binding: ActivityJobDetailBinding
@@ -29,16 +30,17 @@ class JobDetailActivity : BaseActivity(), BaseActivity.OnRetryButtonClick  {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecyclerView()
-        binding.tvPayMode.setOnClickListener {
-            startActivity(Intent(this@JobDetailActivity,AcceptedJobActivity::class.java))
-        }
+        binding.header.tvHeading.text="Order #13452455"
+//        binding.tvPayMode.setOnClickListener {
+//
+//        }
     }
 
     private fun setupRecyclerView() {
         binding.recyclerItems.setHasFixedSize((false))
         jobItemAdapter= JobItemAdapter(this,jobList, object : JobItemAdapter.OnItemClicked {
             override fun onRecyclerItemClicked(data: JobModel) {
-
+                startActivity(Intent(this@JobDetailActivity,OrderDetailsActivity::class.java))
             }
 
         })
