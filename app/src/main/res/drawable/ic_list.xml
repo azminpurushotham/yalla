@@ -1,36 +1,4 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="27.9dp"
-    android:height="24.521dp"
-    android:viewportWidth="27.9"
-    android:viewportHeight="24.521">
-  <path
-      android:pathData="M8.991,0L2.452,0A2.455,2.455 0,0 0,0 2.452v6.539a2.455,2.455 0,0 0,2.452 2.452L8.991,11.443a2.455,2.455 0,0 0,2.452 -2.452L11.443,2.452A2.455,2.455 0,0 0,8.991 0ZM8.991,13.078L2.452,13.078A2.455,2.455 0,0 0,0 15.53v6.539a2.455,2.455 0,0 0,2.452 2.452L8.991,24.521a2.455,2.455 0,0 0,2.452 -2.452L11.443,15.53A2.455,2.455 0,0 0,8.991 13.078Z">
-    <aapt:attr name="android:fillColor">
-      <gradient 
-          android:startY="24.521"
-          android:startX="5.7215"
-          android:endY="0"
-          android:endX="5.7215"
-          android:type="linear">
-        <item android:offset="0" android:color="#FF5558FF"/>
-        <item android:offset="1" android:color="#FF00C0FF"/>
-      </gradient>
-    </aapt:attr>
-  </path>
-  <path
-      android:pathData="M8.226,3.944a0.82,0.82 0,0 0,-1.153 0.091l-1.807,2.118 -0.531,-0.53a0.817,0.817 0,0 0,-1.156 1.156L4.735,7.935a0.818,0.818 0,0 0,1.2 -0.047l2.382,-2.791A0.818,0.818 0,0 0,8.226 3.944ZM8.226,17.022a0.818,0.818 0,0 0,-1.153 0.091L5.266,19.235l-0.531,-0.53a0.817,0.817 0,0 0,-1.156 1.156l1.156,1.156a0.818,0.818 0,0 0,1.2 -0.047l2.382,-2.791A0.818,0.818 0,0 0,8.226 17.022ZM27.083,14.713L14.004,14.713a0.817,0.817 0,0 0,0 1.635L27.083,16.348a0.817,0.817 0,0 0,0 -1.635ZM27.083,17.983L14.004,17.983a0.817,0.817 0,0 0,0 1.635L27.083,19.618a0.817,0.817 0,0 0,0 -1.635ZM20.544,21.253L14.004,21.253a0.817,0.817 0,0 0,0 1.635h6.539a0.817,0.817 0,0 0,0 -1.635ZM27.083,4.905L14.004,4.905a0.817,0.817 0,0 0,0 1.635L27.083,6.54a0.817,0.817 0,0 0,0 -1.635ZM14.004,3.27L27.083,3.27a0.817,0.817 0,0 0,0 -1.635L14.004,1.635a0.817,0.817 0,0 0,0 1.635ZM14.004,9.809h6.539a0.817,0.817 0,0 0,0 -1.635L14.004,8.174a0.817,0.817 0,0 0,0 1.635Z">
-    <aapt:attr name="android:fillColor">
-      <gradient 
-          android:startY="22.888"
-          android:startX="15.619501"
-          android:endY="1.635"
-          android:endX="15.619501"
-          android:type="linear">
-        <item android:offset="0" android:color="#FFADDCFF"/>
-        <item android:offset="0.503" android:color="#FFEAF6FF"/>
-        <item android:offset="1" android:color="#FFEAF6FF"/>
-      </gradient>
-    </aapt:attr>
-  </path>
+<vector android:height="22.759125dp" android:viewportHeight="18.708"
+    android:viewportWidth="24.66" android:width="30dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#6e59da" android:pathData="M2.551,0A2.551,2.551 0,1 0,5.1 2.551,2.551 2.551,0 0,0 2.551,0ZM2.551,6.8A2.551,2.551 0,1 0,5.1 9.354,2.551 2.551,0 0,0 2.551,6.803ZM2.551,13.6A2.551,2.551 0,1 0,5.1 16.157,2.551 2.551,0 0,0 2.551,13.606ZM9.351,4.246L22.959,4.246a1.7,1.7 0,0 0,0 -3.4L9.354,0.846a1.7,1.7 0,0 0,0 3.4ZM22.957,7.646L9.354,7.646a1.7,1.7 0,1 0,0 3.4L22.959,11.046a1.7,1.7 0,1 0,0 -3.4ZM22.957,14.446L9.354,14.446a1.7,1.7 0,1 0,0 3.4L22.959,17.846a1.7,1.7 0,1 0,0 -3.4Z"/>
 </vector>
