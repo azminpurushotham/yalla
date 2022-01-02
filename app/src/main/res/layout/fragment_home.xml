@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@color/background"
     tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,19 +62,19 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:text="5"
-            android:background="@drawable/shape_orange_white_circle"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="center"
-            android:fontFamily="@font/rubik_bold"
-            android:textStyle="bold"
-            android:textColor="@color/white"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_12sdp"
             android:layout_marginBottom="@dimen/_19sdp"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"/>
+            android:background="@drawable/shape_orange_white_circle"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -94,24 +94,24 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/profile_man"/>
+                android:src="@drawable/profile_man" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_bold"
                 android:text="Alex thomas"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Truck Driver"
-                app:fontFamily="@font/rubik"
                 android:textColor="@color/black"
-                android:textSize="11sp"/>
+                android:textSize="11sp"
+                app:fontFamily="@font/rubik" />
 
 
             <LinearLayout
@@ -132,10 +132,10 @@
                     android:orientation="vertical">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/activityView"
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
                         android:layout_marginBottom="10dp"
-                        android:id="@+id/activityView"
                         android:background="@drawable/shape_green_home"
                         android:padding="20dp">
 
@@ -143,11 +143,11 @@
                             android:id="@+id/txt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_bold"
                             android:paddingEnd="40dp"
                             android:text="July \nEarnings"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -192,11 +192,11 @@
                             android:id="@+id/txt11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
                             android:paddingEnd="40dp"
                             android:text="Items to \nReturn"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -242,10 +242,10 @@
 
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/jobView"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_marginBottom="10dp"
-                        android:id="@+id/jobView"
                         android:background="@drawable/shape_white_home"
                         android:padding="20dp">
 
@@ -253,11 +253,11 @@
                             android:id="@+id/txt111"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
                             android:paddingEnd="40dp"
                             android:text="Jobs in \nJuly"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -302,11 +302,11 @@
                             android:id="@+id/txt1111"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
                             android:paddingEnd="40dp"
                             android:text="Cash \nCollected"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
