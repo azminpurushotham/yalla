@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:text="Home"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:text="Notification"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:text="My Jobs"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:layout_marginBottom="9dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:text="My Profile"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
@@ -197,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:text="Settings"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
