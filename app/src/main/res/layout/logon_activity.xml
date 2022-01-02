@@ -36,11 +36,11 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            app:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="Driver"
             android:textColor="@color/primarydark"
@@ -53,7 +53,7 @@
             android:fontFamily="@font/rubik"
             android:gravity="center"
             android:text="Welcome back"
-            android:textColor="@color/black"
+            android:textColor="#0F385B"
             android:textSize="12sp"
             android:textStyle="bold" />
 
