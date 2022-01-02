@@ -72,6 +72,8 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/rubik"
                     android:text="Orders : 5"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@drawable/ic_box__1_"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_9ssp" />
 
@@ -93,6 +95,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/rubik"
                             android:text="Distance : "
+                            android:drawablePadding="7dp"
+                            android:drawableLeft="@drawable/location_w"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_9ssp" />
 
@@ -118,6 +122,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/rubik"
                             android:text="Earnings : "
+                            android:drawablePadding="2dp"
+                            android:drawableLeft="@drawable/ic_earn_money"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_9ssp" />
 

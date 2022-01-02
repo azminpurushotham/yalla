@@ -4,9 +4,11 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.cherry.yalla.R
 import com.cherry.yalla.model.JobModel
@@ -45,6 +47,19 @@ class JobAdapter (
         holder.itemView.setOnClickListener {
             onItemClicked.onRecyclerItemClicked(JobModel())
         }
+        holder.imgDot.visibility=View.VISIBLE
+        if(position==2){
+            holder.imgDot.visibility=View.GONE
+        }
+
+        DrawableCompat.setTint(
+            DrawableCompat.wrap(holder.tvNumber.background),
+            ContextCompat.getColor(mContext, R.color.gray_shade)
+        )
+        DrawableCompat.setTint(
+            DrawableCompat.wrap(holder.tvPayMode.background),
+            ContextCompat.getColor(mContext, R.color.gray_shade)
+        )
     }
 
     override fun getItemCount(): Int {
@@ -55,10 +70,16 @@ class JobAdapter (
 
         var tvShipping: TextView
         var tvAddress: TextView
+        var imgDot: ImageView
+        var tvNumber: TextView
+        var tvPayMode: TextView
 
         init {
             tvShipping = itemView.findViewById<View>(R.id.tvShipping) as TextView
             tvAddress = itemView.findViewById<View>(R.id.tvAddress) as TextView
+            imgDot = itemView.findViewById(R.id.imgDots) as ImageView
+            tvNumber = itemView.findViewById<View>(R.id.tvNumber) as TextView
+            tvPayMode = itemView.findViewById<View>(R.id.tvPayMode) as TextView
         }
     }
 }

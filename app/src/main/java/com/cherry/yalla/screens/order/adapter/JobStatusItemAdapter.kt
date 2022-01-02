@@ -24,7 +24,8 @@ class JobStatusItemAdapter(
     lateinit var onItemClicked: OnItemClicked
 
     interface OnItemClicked {
-        fun onRecyclerItemClicked(data: JobModel)
+        fun onRecyclerItemClicked(data: JobModel,pos:Int)
+        fun onQtyItemClicked(data: JobModel,pos:Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -71,6 +72,9 @@ class JobStatusItemAdapter(
                 ContextCompat.getColor(mContext, R.color.grey)
             )
         }
+
+        holder.tvQty.setOnClickListener { listener.onQtyItemClicked(JobModel(),position) }
+        holder.itemView.setOnClickListener { listener.onRecyclerItemClicked(JobModel(),position) }
     }
 
     override fun getItemCount(): Int {
@@ -82,11 +86,13 @@ class JobStatusItemAdapter(
         var tvNumber: TextView
         var tickContainer: LinearLayout
         var noteLayout: LinearLayout
+        var tvQty:TextView
 
         init {
             tvNumber = itemView.findViewById<View>(R.id.tvNumber) as TextView
             tickContainer = itemView.findViewById<View>(R.id.tickContainer) as LinearLayout
             noteLayout = itemView.findViewById<View>(R.id.noteLayout) as LinearLayout
+            tvQty=itemView.findViewById(R.id.tvQty) as TextView
         }
     }
 }

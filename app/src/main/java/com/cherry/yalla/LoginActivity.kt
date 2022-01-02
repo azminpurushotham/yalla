@@ -4,8 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity : ComponentActivity() {
+class LoginActivity : AppCompatActivity() {
     lateinit var btnLogin: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {

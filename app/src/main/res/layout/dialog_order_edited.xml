@@ -172,6 +172,8 @@
                         android:background="@drawable/shape_oneside_rounded_rect_gray_right"
                         android:fontFamily="@font/rubik"
                         android:paddingLeft="20dp"
+                        android:drawablePadding="4dp"
+                        android:drawableRight="@drawable/location_ws"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
                         android:paddingBottom="4dp"

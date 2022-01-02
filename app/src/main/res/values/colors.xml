@@ -5,7 +5,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
-    <color name="background">#FFF3F5F7</color>
+    <color name="background">#F3F5F7</color>
 
     <color name="purple_200">#FF6200EE</color>
     <color name="purple_500">#FF6200EE</color>
@@ -27,4 +27,5 @@
     <color name="edited">#FFBD27</color>
     <color name="grey">#5B6F99</color>
     <color name="light_green">#59DA90</color>
+    <color name="gray_shade">#5B6F99</color>
 </resources>

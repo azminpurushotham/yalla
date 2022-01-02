@@ -36,7 +36,7 @@ class AcceptedJobAdapter (
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        holder.imgDot.visibility=View.VISIBLE
         if(position==0){
             DrawableCompat.setTint(
                 DrawableCompat.wrap(holder.tvNumber.background),
@@ -80,6 +80,7 @@ class AcceptedJobAdapter (
                 DrawableCompat.wrap(holder.imgDot.drawable),
                 ContextCompat.getColor(mContext, R.color.yellow)
             )
+            holder.imgDot.visibility=View.GONE
             holder.imgStatus.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.completed_yellow))
             holder.container.background= ContextCompat.getDrawable(mContext, R.drawable.shape_rounded_rect_yellow)
         }

@@ -30,6 +30,9 @@ class ActivityLogActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
+
+        binding.header.tvHeading.text="Activity Log"
+
         setupRecyclerView()
     }
 
