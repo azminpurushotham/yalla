@@ -53,7 +53,7 @@
             android:name=".SettingsActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Yalla.NoActionBar" />
+            android:theme="@style/Theme.Yalla.NoActionBarPrimary" />
 
         <meta-data
             android:name="preloaded_fonts"

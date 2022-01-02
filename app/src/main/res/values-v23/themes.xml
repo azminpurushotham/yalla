@@ -17,4 +17,11 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="Theme.Yalla.NoActionBarPrimary">
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>
