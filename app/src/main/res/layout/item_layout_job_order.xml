@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="9"
         android:id="@+id/container"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/shape_one_side_rounded_rect"
         android:orientation="vertical"
         android:paddingBottom="15dp">
@@ -64,7 +65,7 @@
                     android:layout_height="32dp"
                     android:layout_gravity="right"
                     android:background="@drawable/shape_rounded_rect_gray_right"
-                    android:fontFamily="@font/rubik"
+                    app:fontFamily="@font/rubik"
                     android:gravity="center"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -97,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:background="@drawable/shape_oneside_rounded_rect_gray_right"
-                android:fontFamily="@font/rubik"
+                app:fontFamily="@font/rubik"
                 android:paddingLeft="20dp"
                 android:paddingTop="4dp"
                 android:drawablePadding="4dp"
