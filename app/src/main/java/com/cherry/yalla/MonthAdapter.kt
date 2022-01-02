@@ -32,6 +32,5 @@ class MonthAdapter(private val list: List<String>) :
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val txtMonth: TextView = itemView.findViewById(R.id.txtMonth)
-
     }
 }

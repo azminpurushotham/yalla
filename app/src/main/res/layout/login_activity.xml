@@ -41,17 +41,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            app:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="Driver"
-            android:fontFamily="@font/rubik_medium"
+            app:fontFamily="@font/rubik_medium"
             android:textColor="@color/primarydark"
             android:textSize="22sp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_medium"
+            app:fontFamily="@font/rubik_medium"
             android:gravity="center"
             android:text="Welcome back"
             android:textColor="#0F385B"
@@ -87,7 +86,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_editext"
                 android:hint="Password"
-                android:fontFamily="@font/rubik_medium"
+                app:fontFamily="@font/rubik_medium"
                 android:inputType="textPassword"
                 android:paddingLeft="13dp"
                 android:gravity="center_vertical"
