@@ -83,15 +83,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:fontFamily="@font/rubik_bold"
                 android:text="Alex thomas"
                 android:textColor="@color/black"
-                android:textSize="13sp"
-                android:fontFamily="@font/rubik_medium" />
+                android:textSize="13sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Truck Driver"
+                app:fontFamily="@font/rubik"
                 android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -130,7 +131,7 @@
                             android:text="July \nEarnings"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
+                            app:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -179,7 +180,7 @@
                             android:text="Items to \nReturn"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
+                            app:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -240,7 +241,7 @@
                             android:text="Jobs in \nJuly"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
+                            app:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -289,7 +290,7 @@
                             android:text="Cash \nCollected"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:fontFamily="@font/rubik_medium"
+                            app:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
