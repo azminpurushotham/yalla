@@ -41,8 +41,8 @@ class MainActivity : FragmentActivity() {
         }
 
         layJobs.setOnClickListener {
-//            findNavController(this, R.id.container).navigate(R.id.jobListFragment)
-            findNavController(this, R.id.container).navigate(R.id.itemsToReturnFragment)
+            findNavController(this, R.id.container).navigate(R.id.jobListFragment)
+//            findNavController(this, R.id.container).navigate(R.id.itemsToReturnFragment)
         }
     }
 
