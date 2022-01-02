@@ -10,6 +10,7 @@ import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
@@ -18,7 +19,7 @@ class MainActivity : FragmentActivity() {
 
     lateinit var laySettings: LinearLayout
     lateinit var layProfile: LinearLayout
-    lateinit var layJobs: LinearLayout
+    lateinit var layJobs: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
