@@ -148,6 +148,7 @@
                             android:text="July \nEarnings"
                             android:textColor="@color/white"
                             android:textSize="16sp"
+                            android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 

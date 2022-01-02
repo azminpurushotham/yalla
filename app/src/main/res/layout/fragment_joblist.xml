@@ -65,11 +65,26 @@
 
         <ImageView
             android:id="@+id/imgDelivery"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/shape_primary_button"
             android:padding="8dp"
             android:src="@drawable/delivery_van"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:background="@drawable/shape_orange_white_circle"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
