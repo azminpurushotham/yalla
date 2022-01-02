@@ -40,7 +40,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
-            app:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik"
             android:text="Completed"
             android:textColor="@color/white"
             android:textSize="@dimen/_20ssp"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="3dp"
-            app:fontFamily="@font/rubik_medium"
+            android:fontFamily="@font/rubik_medium"
             android:text="All your task are done"
             android:textColor="@color/white"
             android:textSize="@dimen/_7ssp"
@@ -74,7 +74,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:fontFamily="@font/rubik"
+                    android:fontFamily="@font/rubik"
                     android:text="Total Amount : "
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:fontFamily="@font/rubik_medium"
+                    android:fontFamily="@font/rubik_medium"
                     android:text="QAR 4000.00"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
@@ -106,7 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:fontFamily="@font/rubik_medium"
+                        android:fontFamily="@font/rubik_medium"
                         android:paddingLeft="15dp"
                         android:paddingTop="10dp"
                         android:paddingRight="15dp"
@@ -126,7 +126,7 @@
                             android:layout_height="32dp"
                             android:layout_gravity="right"
                             android:background="@drawable/shape_rounded_rect_gray_right"
-                            app:fontFamily="@font/rubik"
+                            android:fontFamily="@font/rubik"
                             android:gravity="center"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
@@ -147,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
-                        app:fontFamily="@font/rubik"
+                        android:fontFamily="@font/rubik"
                         android:text="Items: 8"
                         android:textColor="@color/text_secondary"
                         android:textSize="@dimen/_9ssp" />
@@ -157,7 +157,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
-                        app:fontFamily="@font/rubik"
+                        android:fontFamily="@font/rubik"
                         android:text="Pending: 8"
                         android:textColor="@color/text_secondary"
                         android:textSize="@dimen/_9ssp" />
@@ -167,7 +167,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
                         android:background="@drawable/shape_oneside_rounded_rect_gray_right"
-                        app:fontFamily="@font/rubik"
+                        android:fontFamily="@font/rubik"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:drawablePadding="4dp"
@@ -190,7 +190,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:fontFamily="@font/rubik"
+                        android:fontFamily="@font/rubik"
                         android:text="Total Amount : "
                         android:textColor="@color/primary"
                         android:textSize="@dimen/_10ssp" />
@@ -199,7 +199,7 @@
                         android:id="@+id/tvEarnings"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:fontFamily="@font/rubik_medium"
+                        android:fontFamily="@font/rubik_medium"
                         android:text="QAR 4000.00"
                         android:textColor="@color/primary"
                         android:textSize="@dimen/_10ssp" />
@@ -214,7 +214,7 @@
             android:layout_marginTop="15dp"
             android:textSize="@dimen/_9ssp"
             android:id="@+id/btBack"
-            app:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik"
             android:textColor="@color/white"
             android:layout_marginBottom="30dp"
             android:textAllCaps="false"/>

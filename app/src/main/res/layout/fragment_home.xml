@@ -49,16 +49,31 @@
             app:layout_constraintTop_toTopOf="parent"
             app:track="@drawable/track" />
 
+
         <ImageView
             android:id="@+id/imgDelivery"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/shape_primary_button"
             android:padding="8dp"
             android:src="@drawable/delivery_van"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:text="5"
+            android:background="@drawable/shape_orange_white_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -83,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/rubik_bold"
+                android:fontFamily="@font/rubik_bold"
                 android:text="Alex thomas"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
@@ -94,8 +109,7 @@
                 android:text="Truck Driver"
                 app:fontFamily="@font/rubik"
                 android:textColor="@color/black"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:textSize="11sp"/>
 
 
             <LinearLayout
@@ -131,7 +145,7 @@
                             android:text="July \nEarnings"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            app:fontFamily="@font/rubik_medium"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -180,7 +194,7 @@
                             android:text="Items to \nReturn"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:fontFamily="@font/rubik_medium"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -241,7 +255,7 @@
                             android:text="Jobs in \nJuly"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:fontFamily="@font/rubik_medium"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -290,7 +304,7 @@
                             android:text="Cash \nCollected"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:fontFamily="@font/rubik_medium"
+                            android:fontFamily="@font/rubik_medium"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 

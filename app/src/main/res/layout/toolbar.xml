@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/imgBack"
-        app:fontFamily="@font/rubik_medium"
+        android:fontFamily="@font/rubik_medium"
         android:text="Job #0099"
         android:textColor="@color/toolbar_title"
         android:textSize="@dimen/_13ssp" />

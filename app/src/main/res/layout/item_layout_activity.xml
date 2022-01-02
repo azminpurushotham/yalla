@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/rubik_medium"
+                android:fontFamily="@font/rubik_medium"
                 android:paddingRight="2dp"
                 android:text="Salha "
                 android:textColor="@color/black"
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/rubik"
+                android:fontFamily="@font/rubik"
                 android:paddingRight="15dp"
                 android:text="(Customer care)"
                 android:textColor="@color/black"
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik"
             android:text="Deliver between 5pm and 6pm"
             android:textColor="@color/text_secondary"
             android:textSize="@dimen/_8ssp" />
@@ -88,14 +88,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/rubik"
+                android:fontFamily="@font/rubik"
                 android:text="Postponed from"
                 android:textColor="@color/text_secondary"
                 android:textSize="@dimen/_8ssp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fontFamily="@font/rubik_medium"
+                android:fontFamily="@font/rubik_medium"
                 android:text="1/22/21"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
@@ -167,14 +167,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik"
             android:text="Jun 21"
             android:textColor="@color/text_secondary"
             android:textSize="@dimen/_8ssp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fontFamily="@font/rubik_medium"
+            android:fontFamily="@font/rubik_medium"
             android:text="05:00 PM"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical"
