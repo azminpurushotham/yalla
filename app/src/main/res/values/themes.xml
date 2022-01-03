@@ -14,6 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
 
 
 <!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
@@ -23,6 +24,7 @@
     <style name="Theme.Yalla.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
 <!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
 <!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
@@ -36,11 +38,13 @@
     </style>
 
     <style name="Theme.Yalla.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
 <!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
 <!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
 
     <style name="Theme.Yalla.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
 <!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
 <!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
