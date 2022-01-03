@@ -1,5 +1,6 @@
 package com.cherry.yalla
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,6 +11,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.cherry.yalla.screens.job.JobActivity
+import com.cherry.yalla.screens.order.MyJobActivity
 import kotlin.math.log
 
 class JobListFragment : Fragment() {
@@ -78,6 +81,7 @@ class JobListFragment : Fragment() {
 
 
     private fun onClicked(){
-        findNavController().navigate(R.id.itemsToReturnFragment)
+//        findNavController().navigate(R.id.itemsToReturnFragment)
+        startActivity(Intent(requireActivity(), JobActivity::class.java))
     }
 }
