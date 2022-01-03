@@ -45,7 +45,7 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         }
         binding.header.tvHeading.text="Order #13452455"
         binding.btnUpdate.setOnClickListener {
-            startActivity(Intent(this@OrderDetailsActivity,AcceptedJobActivity::class.java))
+            showOrderDialog(0)
         }
 
         binding.btnNotification.setOnClickListener {
@@ -56,6 +56,10 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
             showPaymentDialog()
         }
 
+        binding.btnCancel.setOnClickListener {
+            showOrderDialog(2)
+        }
+
     }
 
     private fun setupRecyclerView(showNote:Boolean) {
@@ -63,7 +67,9 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         jobItemAdapter =
             JobStatusItemAdapter(this,showNote, jobList, object : JobStatusItemAdapter.OnItemClicked {
                 override fun onRecyclerItemClicked(data: JobModel,pos:Int) {
-                    showOrderDialog(pos)
+                    if (pos==1) {
+                        showOrderDialog(pos)
+                    }
                 }
 
                 override fun onQtyItemClicked(data: JobModel, pos: Int) {

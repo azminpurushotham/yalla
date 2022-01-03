@@ -25,6 +25,12 @@
         tools:layout="@layout/fragment_joblist" />
 
     <fragment
+        android:id="@+id/cashCollectedFragment"
+        android:name="com.cherry.yalla.CashCollectedFragment"
+        android:label="@string/cashcollected"
+        tools:layout="@layout/fragment_cashcollected" />
+
+    <fragment
         android:id="@+id/chengePasswordFragment"
         android:name="com.cherry.yalla.EditPasswordFragment"
         android:label="@string/changepassword"

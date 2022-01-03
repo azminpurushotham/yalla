@@ -33,7 +33,11 @@ class HomeFragment : Fragment() {
 
     lateinit var fragmentContainer: View
     lateinit var jobView: ConstraintLayout
+    lateinit var layReturn: ConstraintLayout
     lateinit var activityView: ConstraintLayout
+    lateinit var layCashCollected: ConstraintLayout
+    lateinit var imgDelivery: ImageView
+    lateinit var txtDelivery: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,11 +53,33 @@ class HomeFragment : Fragment() {
     ): View? {
         fragmentContainer = inflater.inflate(R.layout.fragment_home, container, false)
         jobView = fragmentContainer.findViewById(R.id.jobView)
-        jobView = fragmentContainer.findViewById(R.id.jobView)
+        layReturn = fragmentContainer.findViewById(R.id.layReturn)
+        layCashCollected = fragmentContainer.findViewById(R.id.layCashCollected)
+        imgDelivery = fragmentContainer.findViewById(R.id.imgDelivery)
+        txtDelivery = fragmentContainer.findViewById(R.id.txtDelivery)
+
         jobView.setOnClickListener {
             findNavController().navigate(R.id.jobListFragment)
         }
+
+        layReturn.setOnClickListener {
+            findNavController().navigate(R.id.itemsToReturnFragment)
+        }
+
+        txtDelivery.setOnClickListener {
+            findNavController().navigate(R.id.itemsToReturnFragment)
+        }
+
+        imgDelivery.setOnClickListener {
+            findNavController().navigate(R.id.itemsToReturnFragment)
+        }
+
+        layCashCollected.setOnClickListener {
+            findNavController().navigate(R.id.cashCollectedFragment)
+        }
+
         activityView = fragmentContainer.findViewById(R.id.activityView)
+
         activityView.setOnClickListener {
             startActivity(Intent(requireContext(), EarningActivity::class.java))
         }

@@ -36,7 +36,7 @@ class NotificationAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.tvAccept.setOnClickListener {
+        holder.itemView.setOnClickListener {
             listener.onRecyclerItemClicked(JobModel())
         }
     }

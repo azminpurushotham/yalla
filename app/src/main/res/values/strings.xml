@@ -11,4 +11,5 @@
     <string name="joblist">Job List</string>
     <string name="changepassword">changepassword</string>
     <string name="returnitem">return</string>
+    <string name="cashcollected">cashcollected</string>
 </resources>

@@ -9,6 +9,7 @@ import com.cherry.yalla.databinding.ActivityJobBinding
 import com.cherry.yalla.databinding.ActivityLogBinding
 import com.cherry.yalla.databinding.ActivityMyJobBinding
 import com.cherry.yalla.model.JobModel
+import com.cherry.yalla.screens.job.AcceptedJobActivity
 import com.cherry.yalla.screens.job.JobActivity
 import com.cherry.yalla.screens.job.JobDetailActivity
 import com.cherry.yalla.screens.job.adapter.JobAdapter
@@ -46,7 +47,7 @@ class MyJobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         binding.recyclerJob.setHasFixedSize((false))
         jobAdapter= JobListAdapter(this,jobList, object : JobListAdapter.OnItemClicked {
             override fun onRecyclerItemClicked(data: JobModel) {
-                startActivity(Intent(this@MyJobActivity, JobActivity::class.java))
+                startActivity(Intent(this@MyJobActivity, AcceptedJobActivity::class.java))
             }
 
         })

@@ -118,6 +118,7 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
+                       android:id="@+id/layReturn"
                         android:layout_height="200dp"
                         android:background="@drawable/shape_white_home"
                         android:padding="20dp">
@@ -231,6 +232,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
+                        android:id="@+id/layCashCollected"
                         android:background="@drawable/selecter_home_gride"
                         android:padding="20dp">
 

@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="July 02"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
 
@@ -129,6 +130,7 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardElevation="3dp"
                 app:contentPaddingBottom="15dp"
                 app:contentPaddingTop="15dp">
@@ -226,6 +228,7 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardElevation="3dp"
                 app:contentPaddingBottom="15dp"
                 app:contentPaddingTop="15dp">
