@@ -1,6 +1,7 @@
 package com.application.base
 
 import android.app.Application
+import androidx.appcompat.app.AppCompatDelegate
 import com.cherry.yalla.utility.ConnectivityReceiver
 
 
@@ -11,6 +12,7 @@ class BaseApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         mInstance = this
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 //        myAppComponent = DaggerAppComponent
 //            .builder()
 //            .sharedPreferenceModule(SharedPreferenceModule(applicationContext))

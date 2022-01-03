@@ -9,74 +9,7 @@
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="July 20, 2021"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_8ssp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:text="Online"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_8ssp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/switchOnline"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switchOnline"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginEnd="10dp"
-            android:thumb="@drawable/thumb"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imgDelivery"
-            app:layout_constraintTop_toTopOf="parent"
-            app:track="@drawable/track" />
-
-
-        <ImageView
-            android:id="@+id/imgDelivery"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
-            android:background="@drawable/shape_primary_button"
-            android:padding="8dp"
-            android:src="@drawable/delivery_van"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:layout_marginBottom="@dimen/_19sdp"
-            android:background="@drawable/shape_orange_white_circle"
-            android:fontFamily="@font/rubik_bold"
-            android:gravity="center"
-            android:text="5"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/h_toolbar" />
 
 
     <ScrollView
