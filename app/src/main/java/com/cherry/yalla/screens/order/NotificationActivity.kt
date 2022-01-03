@@ -34,6 +34,9 @@ class NotificationActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         binding.header.tvHeading.text="Notifications"
 
         setupRecyclerView()
+        binding.header.imgBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun setupRecyclerView() {

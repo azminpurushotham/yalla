@@ -31,12 +31,13 @@
                 android:text="Job #0099"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/rubik_medium"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="July 20, 2021"
+                android:fontFamily="@font/rubik"
                 android:textColor="@color/black"
                 android:textSize="11sp" />
 
@@ -62,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Orders : 8"
+                android:fontFamily="@font/rubik"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
 
@@ -86,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/rubik"
                 android:text="Distance : 28 KMS"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
@@ -102,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Earnings : QAR 15"
+                android:fontFamily="@font/rubik"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
 

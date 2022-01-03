@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.cherry.yalla.screens.cashcollected.EarningActivity
 import com.cherry.yalla.screens.job.JobActivity
 import com.cherry.yalla.screens.job.JobDetailActivity
 import com.cherry.yalla.screens.order.ActivityLogActivity
@@ -49,7 +50,7 @@ class HomeFragment : Fragment() {
         }
         activityView=fragmentContainer.findViewById(R.id.activityView)
         activityView.setOnClickListener {
-            startActivity(Intent(requireContext(), ActivityLogActivity::class.java))
+            startActivity(Intent(requireContext(), EarningActivity::class.java))
         }
         return fragmentContainer
     }

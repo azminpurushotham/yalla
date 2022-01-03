@@ -29,6 +29,9 @@ class JobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecyclerView()
+        binding.header.imgBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun setupRecyclerView() {

@@ -40,6 +40,9 @@ class OrderDetailsActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecyclerView(false)
+        binding.header.imgBack.setOnClickListener {
+            onBackPressed()
+        }
         binding.header.tvHeading.text="Order #13452455"
         binding.btnUpdate.setOnClickListener {
             startActivity(Intent(this@OrderDetailsActivity,AcceptedJobActivity::class.java))

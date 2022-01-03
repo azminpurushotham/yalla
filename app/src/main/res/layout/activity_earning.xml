@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    tools:context=".screens.cashcollected.EarningActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_one_side_rounded_rect"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Total Earnings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="right"
+                    android:text="QAR 5440.00"
+                    android:textColor="#6D58D8"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:background="@drawable/shape_primary_button"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="From"
+                        android:textColor="#D1D1D1"
+                        android:textSize="@dimen/_7ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="July"
+                        android:drawableRight="@drawable/arrow_down"
+                        android:layout_marginTop="5dp"
+                        android:drawableTint="@color/white"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_calendar_white"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:background="@drawable/shape_white"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="To"
+                        android:textColor="#D1D1D1"
+                        android:textSize="@dimen/_7ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="September"
+                        android:drawableRight="@drawable/arrow_down"
+                        android:layout_marginTop="5dp"
+                        android:drawableTint="#535353"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_calendar_white"
+                        android:textColor="#535353"
+                        android:textSize="@dimen/_11ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/recyclerJob"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

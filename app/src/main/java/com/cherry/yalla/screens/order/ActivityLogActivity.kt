@@ -34,6 +34,9 @@ class ActivityLogActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         binding.header.tvHeading.text="Activity Log"
 
         setupRecyclerView()
+        binding.header.imgBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun setupRecyclerView() {

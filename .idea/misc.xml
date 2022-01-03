@@ -11,8 +11,11 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_arrow_up.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_back_left_arrow_toolbar.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_calendar__1_.xml" value="0.234375" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_calendar_grey.xml" value="0.17760416666666667" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_calendar_white.xml" value="0.17760416666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_right.xml" value="0.18489583333333334" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/ic_right_small.xml" value="0.18489583333333334" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_bottom_right_left.xml" value="0.17760416666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_editext.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_green_button.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_green_home.xml" value="0.234375" />
@@ -31,6 +34,7 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_rounded_rect_yellow.xml" value="0.15104166666666666" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_top_two_side_rounde.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_two_side_rounde.xml" value="0.234375" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_two_side_rounded_rect.xml" value="0.17760416666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/shape_white.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/switch_thumb_false.xml" value="0.1453125" />
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/switch_thumb_true.xml" value="0.1453125" />
@@ -38,6 +42,7 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/drawable/vertical_dot_lines.xml" value="0.234375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/font/rubik.xml" value="0.2484375" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/activity_accepted_job.xml" value="0.264" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/layout/activity_earning.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/activity_job.xml" value="0.4" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/activity_job_detail.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/activity_log.xml" value="0.20416666666666666" />
@@ -49,6 +54,7 @@
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/dialog_order_edited.xml" value="0.2" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/dialog_payment.xml" value="0.21822916666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_earnings.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_jobs.xml" value="0.21822916666666667" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_activity.xml" value="0.264" />
         <entry key="..\:/Personal/yalla/app/src/main/res/layout/item_layout_job_items.xml" value="0.264" />

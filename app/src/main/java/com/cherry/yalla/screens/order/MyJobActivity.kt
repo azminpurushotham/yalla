@@ -37,6 +37,9 @@ class MyJobActivity : BaseActivity(), BaseActivity.OnRetryButtonClick {
         binding.header.tvHeading.text="My Job"
 
         setupRecyclerView()
+        binding.header.imgBack.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     private fun setupRecyclerView() {
