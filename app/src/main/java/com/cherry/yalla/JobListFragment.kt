@@ -5,6 +5,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +23,9 @@ class JobListFragment : Fragment() {
     lateinit var adapter: MonthAdapter
     lateinit var datesAdapter: DatesAdapter
     lateinit var jobsAdapter: JobsAdapter
+
+    lateinit var title: TextView
+    lateinit var btnBack: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +57,8 @@ class JobListFragment : Fragment() {
         rvMonths = view.findViewById(R.id.rvMonths)
         rvDate = view.findViewById(R.id.rvDate)
         rvJobs = view.findViewById(R.id.rvJobs)
+        title = view.findViewById(R.id.title)
+        btnBack = view.findViewById(R.id.btnBack)
 
         adapter = MonthAdapter(months)
         rvMonths.adapter = adapter
@@ -63,6 +70,8 @@ class JobListFragment : Fragment() {
 
         jobsAdapter = JobsAdapter(months,this::onClicked)
         rvJobs.adapter = jobsAdapter
+
+        title.text = "My Job"
 
         return view
     }
