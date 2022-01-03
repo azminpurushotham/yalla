@@ -1,9 +1,9 @@
 package com.cherry.yalla
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemsToReturnAdapter(private val list: List<String>) :
@@ -15,13 +15,13 @@ class ItemsToReturnAdapter(private val list: List<String>) :
         // that is used to hold list item
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_item_return, parent, false)
-
         return ViewHolder(view)
     }
 
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 //        holder.txtMonth.text = list[position]
+
     }
 
     // return the number of the items in the list

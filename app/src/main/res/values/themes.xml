@@ -14,20 +14,49 @@
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+
+
+<!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
 
     <style name="Theme.Yalla.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+<!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
 
     <style name="Theme.Yalla.NoActionBarPrimary">
         <item name="windowActionBar">false</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
         <item name="windowNoTitle">true</item>
+<!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
     </style>
 
-    <style name="Theme.Yalla.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Yalla.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+<!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
+    </style>
 
-    <style name="Theme.Yalla.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Yalla.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+<!--        <item name="android:textViewStyle">@style/RubicTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/RubicButtonStyle</item>-->
+    </style>
+
+   <!-- <style name="RubicTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/aclonica</item>
+        <item name="font">@font/aclonica</item>
+    </style>
+
+    <style name="RubicButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="fontFamily">@font/aclonica</item>
+        <item name="font">@font/aclonica</item>
+    </style>-->
+
 </resources>

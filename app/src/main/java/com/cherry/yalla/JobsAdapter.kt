@@ -1,12 +1,13 @@
 package com.cherry.yalla
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class JobsAdapter(private val list: List<String>) :
+class JobsAdapter(private val list: List<String>, private val onClicked: () -> Unit) :
     RecyclerView.Adapter<JobsAdapter.ViewHolder>() {
 
     // create new views
@@ -22,6 +23,10 @@ class JobsAdapter(private val list: List<String>) :
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 //        holder.txtMonth.text = list[position]
+        holder.itemView.setOnClickListener {
+            Log.v("JobsAdapter"," position $position")
+            onClicked()
+        }
     }
 
     // return the number of the items in the list

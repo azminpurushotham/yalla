@@ -65,11 +65,26 @@
 
         <ImageView
             android:id="@+id/imgDelivery"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/shape_primary_button"
             android:padding="8dp"
             android:src="@drawable/delivery_van"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:background="@drawable/shape_orange_white_circle"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -122,6 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Alex thomas"
+                    android:fontFamily="@font/rubik_bold"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -131,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Truck Driver"
+                    android:fontFamily="@font/rubik"
                     android:textColor="@color/black"
                     android:layout_marginBottom="20dp"
                     android:textSize="11sp"
@@ -158,6 +175,8 @@
                             android:text="Total Earnings"
                             android:textColor="@color/white"
                             android:textSize="13sp"
+                            android:ellipsize="end"
+                            android:lines="1"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -368,7 +387,7 @@
                     android:padding="8dp">
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@null"
@@ -378,11 +397,12 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="50dp"
                         android:layout_height="20dp"
+                        android:layout_weight="1"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
-                        android:src="@drawable/ic_right"
+                        android:src="@drawable/ic_right_black"
                         app:tint="@color/black" />
 
                 </LinearLayout>

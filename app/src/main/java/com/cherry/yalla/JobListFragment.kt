@@ -1,12 +1,18 @@
 package com.cherry.yalla
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.cherry.yalla.screens.job.JobActivity
+import com.cherry.yalla.screens.order.MyJobActivity
 import kotlin.math.log
 
 class JobListFragment : Fragment() {
@@ -21,20 +27,23 @@ class JobListFragment : Fragment() {
     lateinit var datesAdapter: DatesAdapter
     lateinit var jobsAdapter: JobsAdapter
 
+    lateinit var title: TextView
+    lateinit var btnBack: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        months.add("Jan")
-        months.add("Feb")
-        months.add("Mar")
-        months.add("Apr")
+        months.add("January")
+        months.add("Febuary")
+        months.add("March")
+        months.add("April")
         months.add("May")
-        months.add("Jun")
-        months.add("Jul")
-        months.add("Aug")
-        months.add("Sep")
-        months.add("Oct")
-        months.add("Nov")
-        months.add("Dec")
+        months.add("June")
+        months.add("July")
+        months.add("August")
+        months.add("Septmber")
+        months.add("October")
+        months.add("November")
+        months.add("December")
 
         for (i in 1..30) {
             dates.add(i.toString())
@@ -51,6 +60,8 @@ class JobListFragment : Fragment() {
         rvMonths = view.findViewById(R.id.rvMonths)
         rvDate = view.findViewById(R.id.rvDate)
         rvJobs = view.findViewById(R.id.rvJobs)
+        title = view.findViewById(R.id.title)
+        btnBack = view.findViewById(R.id.btnBack)
 
         adapter = MonthAdapter(months)
         rvMonths.adapter = adapter
@@ -60,9 +71,17 @@ class JobListFragment : Fragment() {
         datesAdapter = DatesAdapter(dates)
         rvDate.adapter = datesAdapter
 
-        jobsAdapter = JobsAdapter(months)
+        jobsAdapter = JobsAdapter(months,this::onClicked)
         rvJobs.adapter = jobsAdapter
 
+        title.text = "My Job"
+
         return view
+    }
+
+
+    private fun onClicked(){
+//        findNavController().navigate(R.id.itemsToReturnFragment)
+        startActivity(Intent(requireActivity(), JobActivity::class.java))
     }
 }

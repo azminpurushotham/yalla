@@ -2,9 +2,9 @@ package com.cherry.yalla
 
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class SettingsActivity : ComponentActivity() {
+class SettingsActivity : AppCompatActivity() {
     lateinit var btnBack: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {

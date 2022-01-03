@@ -70,7 +70,7 @@
                 android:alpha=".5"
                 android:fontFamily="@font/rubik"
                 android:gravity="center"
-                android:text="SUV Hyundai Creta"
+                android:text="Truck Driver"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
 
@@ -298,7 +298,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_weight="1"
                         android:gravity="center|start"
-                        android:text="Call\nCustomer care"
+                        android:text="Call\nWarehouse"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
                 </LinearLayout>

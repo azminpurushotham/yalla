@@ -1,12 +1,16 @@
 package com.cherry.yalla
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.fragment.findNavController
 import com.cherry.yalla.screens.cashcollected.EarningActivity
 import com.cherry.yalla.screens.job.JobActivity
 import com.cherry.yalla.screens.job.JobDetailActivity
@@ -27,9 +31,9 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var fragmentContainer:View
-    lateinit var jobView:ConstraintLayout
-    lateinit var activityView:ConstraintLayout
+    lateinit var fragmentContainer: View
+    lateinit var jobView: ConstraintLayout
+    lateinit var activityView: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,12 +47,13 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        fragmentContainer=inflater.inflate(R.layout.fragment_home, container, false)
-        jobView=fragmentContainer.findViewById(R.id.jobView)
+        fragmentContainer = inflater.inflate(R.layout.fragment_home, container, false)
+        jobView = fragmentContainer.findViewById(R.id.jobView)
+        jobView = fragmentContainer.findViewById(R.id.jobView)
         jobView.setOnClickListener {
-
+            findNavController().navigate(R.id.jobListFragment)
         }
-        activityView=fragmentContainer.findViewById(R.id.activityView)
+        activityView = fragmentContainer.findViewById(R.id.activityView)
         activityView.setOnClickListener {
             startActivity(Intent(requireContext(), EarningActivity::class.java))
         }
